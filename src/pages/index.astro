@@ -1,0 +1,44 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import Avatar from "@components/Avatar.astro"
+import FeaturedCardsLayout from "@layouts/FeaturedCardsLayout.astro"
+import FeaturedCard from "@components/FeaturedCard.astro"
+import LinksLayout  from "@layouts/LinksLayout.astro"
+import Link from "@components/Link.astro"
+---
+
+<MainLayout title="Linktree-aftab">
+	<Avatar/>
+	<FeaturedCardsLayout>
+		<FeaturedCard
+			featuredCardIcon = "mdi:twitter"
+			featuredCardTitle = "Support Us!"
+			featuredCardLink = "asds"
+
+		/>
+		<FeaturedCard
+			featuredCardIcon = "mdi:twitter"
+			featuredCardTitle = "Support Us!"
+			featuredCardLink = "asds"
+
+		/>
+	</FeaturedCardsLayout>
+
+	<LinksLayout>
+		<Link 
+			linkTitle = " Astro"
+			linkDescription = " Astro Homepage"
+			LinkUrl= "https://www.astro.build"
+		/>
+		<Link 
+			linkTitle = " Astro"
+			linkDescription = " Astro Homepage"
+			LinkUrl= "https://www.astro.build"
+		/>
+		<Link 
+			linkTitle = " Astro"
+			linkDescription = " Astro Homepage"
+			LinkUrl= "https://www.astro.build"
+		/>
+	</LinksLayout>
+</MainLayout>
